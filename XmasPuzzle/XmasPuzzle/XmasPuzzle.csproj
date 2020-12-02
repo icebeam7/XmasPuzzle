@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Picture00.jpg" />
+    <None Remove="Images\Picture01.jpg" />
+    <None Remove="Images\Picture02.jpg" />
+    <None Remove="Images\Picture03.jpg" />
+    <None Remove="Images\Picture10.jpg" />
+    <None Remove="Images\Picture11.jpg" />
+    <None Remove="Images\Picture12.jpg" />
+    <None Remove="Images\Picture13.jpg" />
+    <None Remove="Images\Picture20.jpg" />
+    <None Remove="Images\Picture21.jpg" />
+    <None Remove="Images\Picture22.jpg" />
+    <None Remove="Images\Picture23.jpg" />
+    <None Remove="Images\Picture30.jpg" />
+    <None Remove="Images\Picture31.jpg" />
+    <None Remove="Images\Picture32.jpg" />
+    <None Remove="Images\Picture33.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Picture00.jpg" />
+    <EmbeddedResource Include="Images\Picture01.jpg" />
+    <EmbeddedResource Include="Images\Picture02.jpg" />
+    <EmbeddedResource Include="Images\Picture03.jpg" />
+    <EmbeddedResource Include="Images\Picture10.jpg" />
+    <EmbeddedResource Include="Images\Picture11.jpg" />
+    <EmbeddedResource Include="Images\Picture12.jpg" />
+    <EmbeddedResource Include="Images\Picture13.jpg" />
+    <EmbeddedResource Include="Images\Picture20.jpg" />
+    <EmbeddedResource Include="Images\Picture21.jpg" />
+    <EmbeddedResource Include="Images\Picture22.jpg" />
+    <EmbeddedResource Include="Images\Picture23.jpg" />
+    <EmbeddedResource Include="Images\Picture30.jpg" />
+    <EmbeddedResource Include="Images\Picture31.jpg" />
+    <EmbeddedResource Include="Images\Picture32.jpg" />
+    <EmbeddedResource Include="Images\Picture33.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+</Project>
